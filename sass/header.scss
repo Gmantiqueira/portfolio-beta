@@ -12,6 +12,7 @@ header.flex {
 
   .menu-toggle {
     align-items: center;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     img {
@@ -44,6 +45,7 @@ header.flex {
     }
 
     .close-btn {
+      cursor: pointer;
       display: none;
       padding: 8px;
       @media screen and (max-width: 768px) {

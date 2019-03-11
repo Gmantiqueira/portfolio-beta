@@ -145,6 +145,7 @@ header.flex {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -186,6 +187,7 @@ header.flex {
         position: static;
         width: auto; } }
     header.flex nav .close-btn {
+      cursor: pointer;
       display: none;
       padding: 8px; }
       @media screen and (max-width: 768px) {
