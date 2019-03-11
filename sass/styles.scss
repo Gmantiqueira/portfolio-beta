@@ -1,0 +1,54 @@
+@import "colors";
+@import "base";
+@import "fonts";
+@import "header";
+
+.intro {
+  padding: 64px 40px;
+
+  h2 {
+    line-height: 40px;
+  }
+}
+
+.skills {
+  background-color: $medium-main;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  padding: 64px 40px;
+  @media screen and (min-width: 768px) {
+    padding: 64px 128px;
+  }
+  h2 {
+    margin-bottom: 32px;
+  }
+  .skill-wraper {
+    flex-direction: column;
+    width: auto;
+    p {
+      margin-bottom: 16px;
+    }
+  }
+  .dev {
+    justify-content: space-around;
+    width: 100%;
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+    }
+  }
+  .soft {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 30%;
+    }
+  }
+}
+
+.projects {
+  background-color: $light-main;
+  padding: 64px 40px;
+  @media screen and (min-width: 768px) {
+    padding: 64px 128px;
+  }
+}
