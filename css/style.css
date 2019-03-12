@@ -167,8 +167,8 @@ header.flex {
       content: "";
       opacity: 0;
       top: 48px;
-      -webkit-transition: all 0.25s ease;
-      transition: all 0.25s ease; }
+      -webkit-transition: all 0.1s ease;
+      transition: all 0.1s ease; }
     header.flex .menu-toggle:before {
       left: 34px;
       -webkit-transform: rotate(45deg);
