@@ -9,21 +9,23 @@
   </head>
   <body>
     <header class="flex">
-      <h4 class="gray">Gabriel Antiqueira</h4>
+      <h4 class="logo">Gabriel Antiqueira</h4>
 
       <div class="menu-toggle" id="menu-toggle">
-        <img src="img/menu-toggle.svg" />
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
 
       <nav class="menu flex">
-        <div id="close-btn" class="white close-btn">X</div>
-        <a href="#skills">Skills</a>
-        <a href="#interests">Interests</a>
-        <a href="/resume">Resume</a>
+        <a class="h2 dark" href="#skills">Skills</a>
+        <a class="h2 dark" href="#interests">Interests</a>
+        <a class="h2 dark" href="#projects">Projects</a>
+        <a class="h2 dark" href="/resume">Resume</a>
       </nav>
     </header>
 
-    <section class="intro flex container">
+    <section class="intro flex container logo-fill-white">
       <h2 class="white">
         Hello! <br />
         My name is Gabriel Antiqueira, <br />
@@ -31,36 +33,79 @@
       </h2>
     </section>
 
-    <section class="skills flex container">
-      <div class="dev flex">
+    <section id="skills" class="skills flex container">
+      <div class="dev">
+        <h2 class="gray bold">Developer Tools</h2>
         <div class="skill-wraper flex">
-          <h2 class="gray bold">Developer Skills</h2>
-          <p>HTML/CSS</p>
-          <p>SASS</p>
-          <p>Javascript</p>
-          <p>PHP</p>
-          <p>C++</p>
-        </div>
-
-        <div class="skill-wraper flex">
-          <h2 class="gray bold">Developer Skills</h2>
-          <p>React</p>
-          <p>Node.js</p>
-          <p>Bootstrap</p>
-          <p>Jquery</p>
-          <p>FuelPHP</p>
+          <div class="skill"><p>HTML/CSS - Intermediário</p></div>
+          <div class="skill"><p>SASS - Avançado</p></div>
+          <div class="skill"><p>Javascript - Intermediário</p></div>
+          <div class="skill"><p>PHP - Básico</p></div>
+          <div class="skill"><p>React - Básico</p></div>
+          <div class="skill"><p>Node.js - Básico</p></div>
+          <div class="skill"><p>Bootstrap - Intermediário</p></div>
+          <div class="skill"><p>Jquery - Intermediário</p></div>
+          <div class="skill"><p>Git</p></div>
+          <div class="skill"><p>Gulp</p></div>
+          <div class="skill"><p>NPM</p></div>
+          <div class="skill"><p>Yarn</p></div>
+          <div class="skill"><p>Webpack</p></div>
         </div>
       </div>
 
-      <div class="soft">
-        <div class="skill-wraper flex"></div>
+      <div class="other">
+        <h2 class="gray bold">Other skills</h2>
+        <div class="skill-wraper flex">
+          <p>Methodic</p>
+          <p>Proactive</p>
+        </div>
       </div>
     </section>
 
-    <section class="projects flex container">
-      <div class="project">
-        <img src="" />
-        <div>
+    <section id="interests" class="interests flex container">
+      <div class="dev">
+        <div class="interest-wraper flex">
+          <h2 class="gray bold">Hobbies</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects flex">
+      <div class="project flex">
+        <div class="print">
+          <img src="" />
+        </div>
+        <div class="description">
+          <h4>Título</h4>
+          <p>
+            Excepteur eu duis labore ipsum laborum tempor duis culpa.
+            Reprehenderit nostrud pariatur proident labore ex mollit sint
+            deserunt nisi. Velit fugiat ipsum enim irure officia exercitation
+            aute ipsum ad in.
+          </p>
+        </div>
+      </div>
+
+      <div class="project flex">
+        <div class="print">
+          <img src="" />
+        </div>
+        <div class="description">
+          <h4>Título</h4>
+          <p>
+            Excepteur eu duis labore ipsum laborum tempor duis culpa.
+            Reprehenderit nostrud pariatur proident labore ex mollit sint
+            deserunt nisi. Velit fugiat ipsum enim irure officia exercitation
+            aute ipsum ad in.
+          </p>
+        </div>
+      </div>
+
+      <div class="project flex">
+        <div class="print">
+          <img src="" />
+        </div>
+        <div class="description">
           <h4>Título</h4>
           <p>
             Excepteur eu duis labore ipsum laborum tempor duis culpa.
@@ -78,6 +123,16 @@
       </div>
 
       <ul>
+        <li>
+          <img src="" />
+          <a class=""></a>
+        </li>
+
+        <li>
+          <img src="" />
+          <a class=""></a>
+        </li>
+
         <li>
           <img src="" />
           <a class=""></a>
