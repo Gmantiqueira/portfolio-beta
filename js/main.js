@@ -12,37 +12,11 @@ $(".menu a").click(function() {
   }
 });
 
-$(document).scroll(function() {
-  $(".logo-fill-white").each(function() {
-    var sectionHeight = $(this).height();
-    var sectionOffset = $(this).offset().top - 200;
-    var sectionOffsetBottom = sectionOffset + sectionHeight;
-
-    if (scroll_pos > sectionOffset && scroll_pos < sectionOffsetBottom) {
-      $(".logo").addClass("white");
-      $(".logo").removeClass("dark");
-      $(".menu-toggle span").addClass("white");
-      $(".menu-toggle span").removeClass("dark");
-    }
-  });
-
-  $(".logo-fill-dark").each(function() {
-    var sectionHeight = $(this).height();
-    var sectionOffset = $(this).offset().top - 200;
-    var sectionOffsetBottom = sectionOffset + sectionHeight;
-
-    if (scroll_pos > sectionOffset && scroll_pos < sectionOffsetBottom) {
-      $(".logo-letter").addClass("blue");
-      $(".logo-letter").removeClass("white");
-    }
-  });
-});
-
 var $doc = $("html, body");
 $(".menu a").click(function() {
   $doc.animate(
     {
-      scrollTop: $($.attr(this, "href")).offset().top - 80
+      scrollTop: $($.attr(this, "href")).offset().top - 128
     },
     400
   );

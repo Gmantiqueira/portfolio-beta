@@ -1,15 +1,13 @@
 header.flex {
-  background-color: transparent;
+  box-sizing: border-box;
   flex-direction: row;
   justify-content: space-between;
-  min-height: 64px;
-  padding: 16px 32px;
+  align-items: center;
+  height: 128px;
+  padding: 0 32px;
   position: fixed;
+  top: 0;
   width: 100%;
-  h4.logo {
-    padding: 8px 0;
-  }
-
   .menu-toggle {
     align-items: center;
     cursor: pointer;
@@ -21,11 +19,12 @@ header.flex {
     z-index: 2;
     &:before,
     &:after {
-      background-color: $lighter-main;
+      background-color: var(--dark-main);
       content: "";
       opacity: 0;
+      overflow: hidden;
       top: 48px;
-      transition: all 0.1s ease;
+      transition: all 0.3s ease;
     }
     &:before {
       left: 34px;
@@ -39,35 +38,33 @@ header.flex {
     &.close {
       &:after,
       &:before {
-        background-color: $dark-main;
+        background-color: var(--lighter-main);
         content: "";
         display: block;
         height: 4px;
-        margin: 4px 0;
         opacity: 1;
         position: absolute;
-        top: 16px;
+        left: 0px;
+        top: 0px;
         width: 100%;
       }
       &:before {
-        left: 0px;
         transform: rotate(45deg);
       }
       &:after {
-        right: 0px;
         transform: rotate(-45deg);
       }
     }
     span {
-      background-color: $lighter-main;
+      background-color: var(--white);
       height: 4px;
       margin: 4px 0;
       width: 100%;
       &.white {
-        background-color: $lighter-main;
+        background-color: var(--white);
       }
       &.dark {
-        background-color: $dark-main;
+        background-color: var(--base-main);
       }
       &.close {
         display: none;
@@ -79,10 +76,10 @@ header.flex {
   }
 
   nav {
-    align-items: flex-end;
-    background-color: #fff;
+    background-color: var(--dark-main);
+    display: none;
     height: 100vh;
-    justify-content: space-around;
+    justify-content: space-between;
     left: 0;
     opacity: 0;
     position: absolute;
@@ -92,6 +89,7 @@ header.flex {
     width: 100%;
 
     @media screen and (min-width: 992px) {
+      align-items: center;
       background-color: transparent;
       display: flex;
       flex-direction: row;
@@ -102,24 +100,31 @@ header.flex {
     }
 
     &.toggle {
+      box-sizing: border-box;
+      display: flex;
       left: 0;
       height: 100vh;
       top: 0;
       opacity: 0.9;
+      padding: 128px 0;
+      transition: all 0.3s ease;
     }
 
     a {
       display: block;
       padding: 16px 0;
+      transition: 0.3s all ease;
       width: 100%;
       @media screen and (min-width: 992px) {
-        color: $lighter-main;
-        font-size: 28px;
+        color: var(--lighter-main);
+        font-size: var(--h4);
+        margin-right: 32px;
         padding: 8px 0;
         width: 128px;
       }
       &:hover {
-        background-color: $lighter-main;
+        background-color: var(--white);
+        color: var(--dark-main);
       }
     }
   }

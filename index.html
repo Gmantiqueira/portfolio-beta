@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="flex">
-      <h4 class="logo">Gabriel Antiqueira</h4>
+    <header class="flex container">
+      <a href="#intro"><h3 class="logo">Gabriel Antiqueira</h3></a>
 
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
@@ -18,131 +18,192 @@
       </div>
 
       <nav class="menu flex">
-        <a class="h2 dark" href="#skills">Skills</a>
-        <a class="h2 dark" href="#interests">Interests</a>
-        <a class="h2 dark" href="#projects">Projects</a>
-        <a class="h2 dark" href="/resume">Resume</a>
+        <a class=" dark" href="/">Home</a>
+        <a class="h4 dark" href="#works">My Works</a>
+        <a class="h4 dark" href="#skills">Skills</a>
+        <a class="h4 dark" href="#formation">Formation</a>
+        <a class="h4 dark" href="#about">About me</a>
       </nav>
     </header>
 
-    <section class="intro flex container logo-fill-white">
-      <h2 class="white">
-        Hello! <br />
-        My name is Gabriel Antiqueira, <br />
-        a Front-End Developer.
-      </h2>
-    </section>
-
-    <section id="skills" class="skills flex container">
-      <div class="dev">
-        <h2 class="gray bold">Developer Tools</h2>
-        <div class="skill-wraper flex">
-          <div class="skill"><p>HTML/CSS - Intermediário</p></div>
-          <div class="skill"><p>SASS - Avançado</p></div>
-          <div class="skill"><p>Javascript - Intermediário</p></div>
-          <div class="skill"><p>PHP - Básico</p></div>
-          <div class="skill"><p>React - Básico</p></div>
-          <div class="skill"><p>Node.js - Básico</p></div>
-          <div class="skill"><p>Bootstrap - Intermediário</p></div>
-          <div class="skill"><p>Jquery - Intermediário</p></div>
-          <div class="skill"><p>Git</p></div>
-          <div class="skill"><p>Gulp</p></div>
-          <div class="skill"><p>NPM</p></div>
-          <div class="skill"><p>Yarn</p></div>
-          <div class="skill"><p>Webpack</p></div>
-        </div>
+    <section class="home flex container" id="home">
+      <div class="img-wrapper">
+        <img />
       </div>
 
-      <div class="other">
-        <h2 class="gray bold">Other skills</h2>
-        <div class="skill-wraper flex">
-          <p>Methodic</p>
-          <p>Proactive</p>
+      <div class="intro">
+        <h3 class="gray">
+          Hello!<br />
+          My name is Gabriel Antiqueira,<br />
+          a Front-End Developer.
+        </h3>
+
+        <div class="social">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
         </div>
       </div>
     </section>
 
-    <section id="interests" class="interests flex container">
-      <div class="dev">
-        <div class="interest-wraper flex">
-          <h2 class="gray bold">Hobbies</h2>
-        </div>
+    <section class="works flex container" id="works">
+      <div class="project">
+        <div class="img-wrapper"></div>
+
+        <h3 class="gray bold">Title</h3>
+        <p class="gray">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
+          mattis ligula.
+        </p>
+
+        <button class="btn-black">See more</button>
+      </div>
+
+      <div class="project">
+        <div class="img-wrapper"></div>
+
+        <h3 class="gray bold">Title</h3>
+        <p class="gray">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
+          mattis ligula.
+        </p>
+
+        <button class="btn-black">See more</button>
+      </div>
+
+      <div class="project">
+        <div class="img-wrapper"></div>
+
+        <h3 class="gray bold">Title</h3>
+        <p class="gray">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
+          mattis ligula.
+        </p>
+
+        <button class="btn-black">See more</button>
       </div>
     </section>
 
-    <section id="projects" class="projects flex">
-      <div class="project flex">
-        <div class="print">
-          <img src="" />
-        </div>
-        <div class="description">
-          <h4>Título</h4>
-          <p>
-            Excepteur eu duis labore ipsum laborum tempor duis culpa.
-            Reprehenderit nostrud pariatur proident labore ex mollit sint
-            deserunt nisi. Velit fugiat ipsum enim irure officia exercitation
-            aute ipsum ad in.
-          </p>
-        </div>
-      </div>
+    <section class="knowledge flex container" id="skills">
+      <div class="text"></div>
 
-      <div class="project flex">
-        <div class="print">
-          <img src="" />
-        </div>
-        <div class="description">
-          <h4>Título</h4>
-          <p>
-            Excepteur eu duis labore ipsum laborum tempor duis culpa.
-            Reprehenderit nostrud pariatur proident labore ex mollit sint
-            deserunt nisi. Velit fugiat ipsum enim irure officia exercitation
-            aute ipsum ad in.
-          </p>
-        </div>
-      </div>
+      <div class="skills">
+        <p class="gray">HTML5 / CSS4</p>
+        <p class="gray">SASS</p>
+        <p class="gray">Javascript</p>
+        <p class="gray">Jquery</p>
+        <p class="gray">Bootstrap</p>
+        <p class="gray">Figma</p>
+        <p class="gray">Photoshop</p>
 
-      <div class="project flex">
-        <div class="print">
-          <img src="" />
-        </div>
-        <div class="description">
-          <h4>Título</h4>
-          <p>
-            Excepteur eu duis labore ipsum laborum tempor duis culpa.
-            Reprehenderit nostrud pariatur proident labore ex mollit sint
-            deserunt nisi. Velit fugiat ipsum enim irure officia exercitation
-            aute ipsum ad in.
-          </p>
-        </div>
+        <p class="gray">Basic React</p>
+        <p class="gray">Node.js</p>
+        <p class="gray">Gulp</p>
+        <p class="gray">NPM / Yarn</p>
+        <p class="gray">Basic PHP</p>
+        <p class="gray">Scrum</p>
+        <p class="gray">Kanban</p>
       </div>
     </section>
 
-    <footer class="contact">
+    <section class="timeline container flex" id="formation">
+      <h3 class="bold gray">Timeline</h3>
+
       <div>
-        <a class="mail">gmantiqueira@gmail.com</a>
+        <h3 class="bold gray">Formation</h3>
+        <ul class="ul-styled">
+          <li class="p1 gray">
+            Bachelor in Computer Science <br />
+            Faculdade Anhanguera de Bauru - Conclusion in 08/2022
+          </li>
+
+          <li class="p1 gray">
+            Building Technical <br />
+            SENAI João Martins Coube - Conclusion in Dez/2016
+          </li>
+        </ul>
       </div>
 
-      <ul>
-        <li>
-          <img src="" />
-          <a class=""></a>
-        </li>
+      <div>
+        <h3 class="bold gray">Experiences</h3>
+        <ul class="ul-styled">
+          <li class="p1 gray">
+            Trainee <br />
+            Revelare - Technology Agency - Since Dec/2018
+          </li>
+        </ul>
+      </div>
 
-        <li>
-          <img src="" />
-          <a class=""></a>
-        </li>
+      <div>
+        <h3 class="bold gray">Courses</h3>
+        <ul class="ul-styled">
+          <li class="p1 gray">
+            Bootcamp of React/RN/Node.js <br />
+            RocketSeat - since Feb/2019
+          </li>
 
-        <li>
-          <img src="" />
-          <a class=""></a>
-        </li>
+          <li class="p1 gray">
+            Danki Code <br />
+            Danki Code - Conclusion in Dez/2018
+          </li>
 
-        <li>
-          <img src="" />
-          <a class=""></a>
-        </li>
-      </ul>
+          <li class="p1 gray">
+            Udemy <br />
+            Udemy - Conclusion in Dez/2018
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about flex container" id="about">
+      <div class="hobbies">
+        <h3 class="gray bold">Hobbies</h3>
+        <p class="gray">Papercraft</p>
+        <p class="gray">Origami</p>
+        <p class="gray">Play guitar</p>
+        <p class="gray">Learn something new</p>
+
+        <p class="gray">Play games</p>
+        <p class="gray">Play chess</p>
+        <p class="gray">Read books/mangas</p>
+        <p class="gray">Watch animes</p>
+      </div>
+
+      <div class="interests">
+        <h3 class="gray bold">Interests</h3>
+        <p class="gray">Technology</p>
+        <p class="gray">Psychology</p>
+        <p class="gray">Inovation</p>
+        <p class="gray">Discipline</p>
+
+        <p class="gray">Learning</p>
+        <p class="gray">Events / Conferences</p>
+        <p class="gray">Empathy</p>
+        <p class="gray">Music</p>
+      </div>
+
+      <div class="qualities">
+        <h3 class="gray bold">Qualities</h3>
+        <p class="gray">Independent</p>
+        <p class="gray">Prudent</p>
+        <p class="gray">Visionary</p>
+        <p class="gray">Empathic</p>
+      </div>
+
+      <div class="qualities">
+        <h3 class="gray bold">To improve</h3>
+        <p class="gray">Introvert</p>
+        <p class="gray">Discontented</p>
+        <p class="gray">Anxious</p>
+        <p class="gray">?</p>
+      </div>
+    </section>
+
+    <footer class="flex container">
+      <h2>Come to talk :)</h2>
+
+      <div class="social"></div>
     </footer>
 
     <script

@@ -1,48 +1,13 @@
-* {
-  box-sizing: border-box;
-  transition: all 0.2s ease;
-}
-
-html {
-  height: 100%;
-  font-family: "Saira";
-  font-weight: normal;
-}
+@import "reset";
 
 body {
-  background-color: $dark-main;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  position: relative;
-  width: 100%;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    color: #fff;
-    text-decoration: none;
-  }
-}
-
-section {
-  padding: 0 40px;
-  &:first-of-type {
-    padding-top: 130px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 0;
-  }
+  background-color: var(--darker-main);
 }
 
 .container {
   margin: 0 auto;
   max-width: 1400px;
-  width: 100%;
+  padding: 0 40px;
 }
 
 .flex {
@@ -51,5 +16,45 @@ section {
   flex-wrap: wrap;
   @media screen and (min-width: 992px) {
     flex-direction: row;
+  }
+}
+
+.btn-black {
+  border: 1px solid transparent;
+  color: var(--lighter-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--base-main);
+  border-radius: 32px;
+  cursor: pointer;
+
+  height: 48px;
+  width: 128px;
+
+  font-size: var(--p1);
+  transition: all 0.3s ease;
+  &:hover {
+    border: 1px solid transparent;
+  }
+}
+
+.img-wrapper {
+  border-radius: 8px;
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+ul.ul-styled {
+  li {
+    &:before {
+      content: "►";
+      color: var(--lighter-main);
+      color: var(--p1);
+      height: auto;
+      width: auto;
+    }
   }
 }
