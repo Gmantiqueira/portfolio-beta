@@ -301,6 +301,7 @@ header.flex {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 40px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -333,7 +334,7 @@ header.flex {
       opacity: 1;
       position: absolute;
       left: 0px;
-      top: 0px;
+      top: 18px;
       width: 100%; }
     header.flex .menu-toggle.close:before {
       -webkit-transform: rotate(45deg);
@@ -359,25 +360,31 @@ header.flex {
         display: none; } }
   header.flex nav {
     background-color: var(--dark-main);
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 100vh;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     left: 0;
     opacity: 0;
+    padding: 128px 0;
     position: absolute;
     text-align: center;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     top: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
     @media screen and (min-width: 992px) {
       header.flex nav {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
         background-color: transparent;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -387,11 +394,10 @@ header.flex {
                 flex-direction: row;
         height: 100%;
         opacity: 1;
+        padding: 0;
         position: static;
         width: auto; } }
     header.flex nav.toggle {
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -400,8 +406,7 @@ header.flex {
       top: 0;
       opacity: 0.9;
       padding: 128px 0;
-      -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      z-index: 1; }
     header.flex nav a {
       display: block;
       padding: 16px 0;

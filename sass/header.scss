@@ -13,6 +13,7 @@ header.flex {
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    height: 40px;
     justify-content: center;
     position: relative;
     width: 40px;
@@ -45,7 +46,7 @@ header.flex {
         opacity: 1;
         position: absolute;
         left: 0px;
-        top: 0px;
+        top: 18px;
         width: 100%;
       }
       &:before {
@@ -77,37 +78,40 @@ header.flex {
 
   nav {
     background-color: var(--dark-main);
-    display: none;
+    display: flex;
     height: 100vh;
     justify-content: space-between;
     left: 0;
     opacity: 0;
+    padding: 128px 0;
     position: absolute;
     text-align: center;
     transition: all 0.3s ease;
     top: 0;
     width: 100%;
+    z-index: -1;
 
     @media screen and (min-width: 992px) {
       align-items: center;
       background-color: transparent;
+      box-sizing: border-box;
       display: flex;
       flex-direction: row;
       height: 100%;
       opacity: 1;
+      padding: 0;
       position: static;
       width: auto;
     }
 
     &.toggle {
-      box-sizing: border-box;
       display: flex;
       left: 0;
       height: 100vh;
       top: 0;
       opacity: 0.9;
       padding: 128px 0;
-      transition: all 0.3s ease;
+      z-index: 1;
     }
 
     a {
