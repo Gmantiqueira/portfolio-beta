@@ -421,3 +421,71 @@ header.flex {
       header.flex nav a:hover {
         background-color: var(--white);
         color: var(--dark-main); }
+
+section.container {
+  margin-bottom: 128px; }
+
+section.home .img-wrapper {
+  height: 256px;
+  width: 256px; }
+
+section.works {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  section.works .project {
+    margin-bottom: 64px; }
+    section.works .project:last-of-type {
+      margin-bottom: 0; }
+    section.works .project .img-wrapper {
+      height: 256px;
+      width: 256px;
+      background-color: var(--lighter-main);
+      margin-bottom: 16px; }
+    section.works .project h3 {
+      margin-bottom: 16px; }
+    section.works .project p {
+      margin-bottom: 32px; }
+
+@media screen and (min-width: 992px) {
+  section.knowledge .text {
+    width: -webkit-calc(100% / 12 * 7);
+    width: calc(100% / 12 * 7); } }
+
+section.knowledge h3 {
+  margin-bottom: 32px;
+  width: 100%; }
+
+section.knowledge .skills {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 240px; }
+  section.knowledge .skills p {
+    display: block;
+    margin-bottom: 16px;
+    width: 50%; }
+
+section.timeline h2 {
+  margin-bottom: 48px; }
+
+section.timeline h3 {
+  margin-bottom: 32px; }
+
+section.timeline ul li {
+  margin-bottom: 32px; }
+
+section.about h2 {
+  margin-bottom: 48px; }
+
+section.about h3 {
+  margin-bottom: 32px; }
+
+section.about p {
+  margin-bottom: 16px; }
+
+section.about .hobbies,
+section.about .interests {
+  max-height: 140px; }
+
+section.about .qualities {
+  max-height: 70px; }

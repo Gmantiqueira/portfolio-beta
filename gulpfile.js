@@ -9,12 +9,14 @@ const host = "portfolio.local";
  */
 
 const scripts = [
-  "node_modules/bootstrap/dist/js/bootstrap.min.js",
   "node_modules/jquery.mmenu/dist/jquery.mmenu.all.js",
   "js/main.js"
 ];
 
-const styles = ["css/style.css"];
+const styles = [
+  "node_modules/font-awesome/css/font-awesome.min.css",
+  "css/style.css"
+];
 
 const watchList = ["*.html"];
 
