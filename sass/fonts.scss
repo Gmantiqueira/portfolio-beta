@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Saira";
-  src: url("../fonts/Saira.eot");
+  src: url("../fonts/Saira-Regular.eot");
+  src: url("../fonts/Saira-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -8,6 +9,7 @@
 @font-face {
   font-family: "Saira";
   src: url("../fonts/Saira-Bold.eot");
+  src: url("../fonts/Saira-Bold.otf");
   font-weight: bold;
   font-style: normal;
 }
@@ -24,7 +26,12 @@ button,
 ul,
 li {
   color: var(--white);
+  font-family: "Saira";
   margin: 0;
+}
+
+html {
+  font-family: "Saira";
 }
 
 .bold {

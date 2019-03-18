@@ -5,7 +5,11 @@ header.flex {
   align-items: center;
   height: 128px;
   padding: 0 32px;
+  position: fixed;
   width: 100%;
+  @media screen and (min-width: 1400px) {
+    left: calc(50% - 700px);
+  }
   .menu-toggle {
     align-items: center;
     cursor: pointer;
@@ -69,7 +73,7 @@ header.flex {
         display: none;
       }
     }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1200px) {
       display: none;
     }
   }
@@ -89,7 +93,7 @@ header.flex {
     width: 100%;
     z-index: -1;
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1200px) {
       align-items: center;
       background-color: transparent;
       box-sizing: border-box;
@@ -98,7 +102,7 @@ header.flex {
       height: 100%;
       opacity: 1;
       padding: 0;
-      position: static;
+      position: initial;
       width: auto;
     }
 
@@ -117,7 +121,8 @@ header.flex {
       padding: 16px 0;
       transition: 0.3s all ease;
       width: 100%;
-      @media screen and (min-width: 992px) {
+      z-index: 2;
+      @media screen and (min-width: 1200px) {
         color: var(--lighter-main);
         font-size: var(--h4);
         margin-right: 32px;

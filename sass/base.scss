@@ -30,12 +30,17 @@ body {
   cursor: pointer;
 
   height: 48px;
-  width: 128px;
+  width: 256px;
+  @media screen and (min-width: 992px) {
+    width: 128px;
+  }
 
   font-size: var(--p1);
   transition: all 0.3s ease;
   &:hover {
-    border: 1px solid transparent;
+    background-color: var(--lighter-main);
+    border: 2px solid var(--medium-main);
+    color: var(--darker-main);
   }
 }
 
